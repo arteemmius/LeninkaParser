@@ -1,0 +1,12 @@
+<doc>
+  <source auto="true" type="str" verify="true"><![CDATA[https://cyberleninka.ru/article/n/struktury-dannyh-dlya-resheniya-zadach-topologicheskogo-proektirovaniya-sbis]]></source>
+  <category auto="true" type="str" verify="true"><![CDATA[Автоматика]]></category>
+  <author auto="true" type="list" verify="true">
+    <item type="str"><![CDATA[Мякота Е.И.]]></item>
+    <item type="str"><![CDATA[Рыбальченко М.В.]]></item>
+  </author>
+  <title auto="true" type="str" verify="true"><![CDATA[Структуры данных для решения задач топологического проектирования СБИС]]></title>
+  <keywords auto="true" type="list" verify="true"/>
+  <annotation auto="true" type="str" verify="true"><![CDATA[]]></annotation>
+  <text auto="true" type="str" verify="true"><![CDATA[Для эффективной программной реализации алгоритмов размещения, планирования кристаллов и трассировки в задачах большой размерности необходимы достаточно простые и универсальные структуры данных, не требующие большого объема памяти. В данной работе предлагаются экономичные списковые структуры данных, состоящие из четырех основных списков: List 1: NET TABLE (NT) NET_NUMBER: NMT.POINTER, NET_FLAGS; NET_LENGTH List 2: NET-MODULE TABLE (NMT) NMT.POINTER: (NET/MODULE FLAGS, MODULE.NUMBERl ; Xpjn, Ypjn),..„ (NET/MODULE FLAGS, MODULE.NUMBERN; Xpjn, Ypjn). List 3: MODULE TABLE (MT) mod mod MODULE_NUMBER: MNT_POINTER; X , Y List 4: MODULE-NET TABLE (MNT) MNT_POINTER: NET.FLAGS, NET.NUMBERl;...; NET.FLAGS, NET.NUMBERN. Список 1 (таблица цепей) имеет один элемент для каждой цепи. Первое слово элемента содержит указатель на таблицу цепь-модуль и признаки (флаги) цепи. Второе слово содержит длину этой цепи после её оценки. Список 2 (таблица цепь-модуль) имеет один элемент переменной длины для каждой цепи. Этот элемент определяет модули, связанные данной цепью. Первое слово содержит признак цепь/модуль и указатель на таблицу модулей. Второе слово описывает смещение контакта относительно координат центра модуля. Список 3 (таблица модулей). Первое слово содержит указатель на таблицу модуль-цепь. Второе слово определяет координаты модуля. Список 4 (таблица модуль-цепь) содержит один элемент переменной длины для каждого модуля, представляющий собой список цепей, инцидентных данному модулю. Основными преимуществами предложенных структур данных являются: • универсальность относительно различных типов задач проектирования; • оптимальное использование памяти; • обработка структур данных может быть реализована с помощью специализированных аппаратных процессоров и сопроцессоров [1]. ]]></text>
+</doc>
